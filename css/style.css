@@ -7,6 +7,9 @@
     --text-black-700:#504e70;
 
 }
+html{
+    font-family: 'Baloo Bhai 2';
+}
 body.dark{
     --bg-black-900: #151515;
     --bg-black-100: #222222;
