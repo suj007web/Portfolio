@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Clicker+Script&family=Montserrat:wght@100;400&family=Orbitron:wght@600&family=Poppins:wght@200;300;400;500;600;700&family=Rubik+Vinyl&family=Ubuntu:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --skin-color: #ec1839;
+  --hover-color: #ec1839;
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
+
+.light {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-black-900)] text-[var(--text-black-900)] font-montserrat;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-skin-color text-white font-medium py-3 px-8 rounded-full inline-block transition-all duration-300 hover:scale-105;
+  }
+}
+
+.text-skin-color {
+  color: var(--skin-color);
+}
+
+.bg-skin-color {
+  background-color: var(--skin-color);
+}
+
+.border-skin-color {
+  border-color: var(--skin-color);
+}
+
+/* New styles for hamburger menu icon */
+.hamburger-icon {
+  @apply text-[var(--text-black-900)] text-2xl cursor-pointer block md:hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon.open {
+  transform: rotate(90deg);
+}
+
+/* Styles for mobile menu */
+.mobile-menu {
+  @apply fixed top-0 left-0 w-full h-full bg-[var(--bg-black-100)] z-50 transform transition-transform duration-300 ease-in-out;
+}
+
+.mobile-menu.closed {
+  transform: translateX(-100%);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/* Add any other custom styles here */
