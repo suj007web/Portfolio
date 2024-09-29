@@ -1,8 +1,12 @@
+'use client'
 import '../styles/globals.css'
 import Aside from '../components/Aside'
 import StyleSwitcher from '../components/StyleSwitcher'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoMdClose } from 'react-icons/io'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export const metadata = {
   title: 'Sujal Chauhan | Full-Stack Developer Portfolio',
@@ -34,11 +38,9 @@ export default function RootLayout({ children }) {
   )
 }
 
-'use client'
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { usePathname } from 'next/navigation'
+
+
 
 function Client() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
