@@ -9,7 +9,7 @@ export const metadata = {
   description: "Sujal Chauhan's professional portfolio. Discover projects in web development, cloud integration, and software engineering.",
   keywords: "Software Developer, Full-Stack Developer, Web Development, Cloud Integration, React, Next.js, Software Engineering",
   authors: [{ name: "Sujal Chauhan" }],
-  metadataBase: new URL('https://www.sujalchauhan.com'),
+  metadataBase: new URL('https://www.sujalchauhan.in'),
   openGraph: {
     title: 'Sujal Chauhan | Full-Stack Developer Portfolio',
     description: "Explore Sujal Chauhan's projects in web development, cloud integration, and software engineering.",
