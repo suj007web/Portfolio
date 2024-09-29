@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import StyleSwitcher from '../components/StyleSwitcher'
 import Client from '@/components/Client'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Sujal Chauhan | Full-Stack Developer Portfolio',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <Client/>
           <main className="flex-1 p-4 lg:p-6 lg:ml-28">
             {children}
+            <Analytics />
           </main>
           <StyleSwitcher />
         </div>
