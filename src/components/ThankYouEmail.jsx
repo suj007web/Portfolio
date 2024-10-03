@@ -22,7 +22,7 @@ export const ThankYouEmail = ({ name }) => (
           Dear {name},
         </Text>
         <Text style={text}>
-          I appreciate you contacting me. I've received your message and will respond soon.
+          I appreciate you contacting me. I&apos;ve received your message and will respond soon.
         </Text>
         <Section style={buttonContainer}>
           <Button
