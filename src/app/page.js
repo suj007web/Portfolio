@@ -21,7 +21,7 @@ export default function Home() {
             As a full-stack web developer and software engineer, I deliver high-quality, scalable solutions. Let’s collaborate to create customized websites, applications, and digital platforms that exceed your expectations and drive business success.
             </motion.p>
             <motion.a 
-              href="https://drive.google.com/file/d/1rfMm6GQp-o5XKOfdmhVCL9W0zQ0G_t7J/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1ltWroVt-NYMM7a9UIRrCvNDMKL1zMpHj/view?usp=drive_link" 
               className="btn inline-block px-6 py-3 bg-skin-color text-white rounded-full transition-transform hover:scale-105"
               variants={itemVariants}
             >
